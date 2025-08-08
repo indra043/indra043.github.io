@@ -55,20 +55,31 @@
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-    }
-    .project-card {
-        background: #fff;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    .project-card a {
-        text-decoration: none;
-        color: #007BFF;
-    }
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .project-card h3 {
+            margin: 0.5rem;
+        }
+        .project-card p {
+            margin: 0.5rem;
+        }
     footer {
         background: #222;
         color: #fff;
@@ -104,14 +115,23 @@
 <section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
-        <li>WordPress Theme Development</li>
-        <li>WooCommerce Customization</li>
-        <li>Elementor Page Builder</li>
-        <li>PHP & MySQL</li>
+    	<li>PHP & MySQL</li>
         <li>HTML5 & CSS3</li>
         <li>JavaScript & jQuery</li>
         <li>SEO Optimization</li>
         <li>Responsive Web Design</li>
+        <li>WordPress Theme Development</li>
+        <li>WooCommerce Customization</li>
+        <li>Elementor Page Builder</li>
+        <li>Custom Theme Development</li>
+        <li>Custom Plugin Development</li>
+        <li>WooCommerce Customization</li>
+        <li>WordPress Security Hardening</li>
+        <li>Custom Post Types & Taxonomies</li>
+        <li>Advanced Custom Fields (ACF)</li>
+        <li>Performance Optimization & Caching</li>
+        <li>Multilingual Site Setup (WPML/Polylang)</li>
+        <li>API Integration with WordPress</li>
     </ul>
 </section>
 
